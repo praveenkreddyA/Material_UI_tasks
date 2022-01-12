@@ -9,7 +9,7 @@ export default function BoxSx() {
       sx={{
         textAlign: "center",
         width: 300,
-        height: 200,
+        height: 300,
         backgroundColor: "primary.light",
         textDecoration: "underline"
       }}
