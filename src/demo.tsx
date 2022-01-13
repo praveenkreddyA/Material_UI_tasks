@@ -1,34 +1,35 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import { Button, TextField } from "@mui/material";
+import { Button, Stack, TextField } from "@mui/material";
 
 export default function BoxSx() {
   return (
-    <Box
-      component="div"
-      sx={{
-        textAlign: "center",
-        width: 300,
-        height: 300,
-        backgroundColor: "primary.light",
-        textDecoration: "underline"
-      }}
-    >
-      <div>
+    <Stack spacing={1} direction="row">
+      <Box
+        sx={{
+          textAlign: "center",
+          width: 200,
+          height: 100,
+          backgroundColor: "primary.light",
+          textDecoration: "underline"
+        }}
+      >
         Praveen Kumar Reddy
         <br />
         <br />
         <Button variant="contained">Submit</Button>
-      </div>
-      <TextField
-        variant="outlined"
-        size="small"
-        type="number"
-        placeholder="Lower"
-        style={{ border: "2px solid brown" }}
-        FormHelperTextProps={{ style: { fontWeight: "bold", color: "red" } }}
-        helperText="it is color change property"
-      />
-    </Box>
+      </Box>
+      <Box sx={{ backgroundColor: "lightblue" }}>
+        <TextField
+          variant="outlined"
+          size="small"
+          type="number"
+          placeholder="Lower"
+          style={{ border: "2px solid brown" }}
+          FormHelperTextProps={{ style: { fontWeight: "bold", color: "red" } }}
+          helperText="it is color change property"
+        />
+      </Box>
+    </Stack>
   );
 }
