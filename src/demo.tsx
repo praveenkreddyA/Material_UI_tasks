@@ -6,10 +6,9 @@ export default function BoxSx() {
   return (
     <Stack spacing={1} direction="row">
       <Box
-        component="div"
         sx={{
           textAlign: "center",
-          width: 100,
+          width: 200,
           height: 100,
           backgroundColor: "primary.light",
           textDecoration: "underline"
@@ -20,7 +19,7 @@ export default function BoxSx() {
         <br />
         <Button variant="contained">Submit</Button>
       </Box>
-      <Box>
+      <Box sx={{ backgroundColor: "lightblue" }}>
         <TextField
           variant="outlined"
           size="small"
